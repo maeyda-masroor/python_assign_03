@@ -89,7 +89,7 @@ if password:
     result, strength = check_password_strength(password)
     if strength == "Strong":
         st.success(result)
-       elif strength == "Moderate":
+    elif strength == "Moderate":
         st.warning(result)
     else:
         st.error("❌ Weak Password - Improve it using these tips:")
